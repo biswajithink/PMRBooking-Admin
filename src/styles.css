@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+    background: #e3e3e3;
+}
+a, a:hover, a:focus, a.activated{
+    text-decoration: none !important;
+}
+.textUpper{
+    text-transform: uppercase;
+}
+
+ login, signup, booking-home{
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/img/background.jpg') no-repeat top center;
+    background-size: cover;
+}
+.bodyCol {
+    background: rgba(3, 100, 78, 0.8);
+    border-radius: 10px;
+    padding: 40px;
+}
+login .bodyContainer, signup .bodyContainer, booking-home .bodyContainer{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+ h2.textUpper{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.bodyContainer form{
+    margin: 15px auto;
+    width: 80%;
+}
+.labelDiv label{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal;    
+    color: #fff;
+}
+.bodyContainer form button{
+    margin: 15px auto;
+}
+.bodyContainer p{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #fff;
+}
+.labelDiv label a, .bodyContainer p a{
+    margin-left: 10px;
+    color: #6dcdff;
+}
+
+.bodyContainer .form-group input{
+    height: 40px;
+    line-height: 40px;
+}

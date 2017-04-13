@@ -1,0 +1,25 @@
+<button class="btn btn-default" id="toggle-sidebar" type="button" (click)="eventCalled()">
+    &#9776;
+</button>
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
+    <ul class="list-group">
+        <div class="nested-menu">
+            <a routerLink="/dashboard/home" [routerLinkActive]="['router-link-active']" class="list-group-item" (click)="addExpandClass('pages')">
+                <i class="fa fa-fw fa-dashboard"></i> Dashboard Page
+            </a>
+        </div>        
+        <!--<a [routerLink]="['chart']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-bar-chart-o"></i> Charts
+        </a>
+        
+        <a [routerLink]="['form']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-edit"></i> Forms
+        </a>-->
+       <a [routerLink]="['curBooking']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-bar-chart-o"></i> Current Booking
+        </a>
+        <a [routerLink]="['preBooking']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-bar-chart-o"></i> Previous Booking
+        </a>
+    </ul>
+</nav>

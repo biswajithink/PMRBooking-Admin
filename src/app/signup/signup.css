@@ -1,0 +1,8 @@
+
+.nameInputDiv input{
+    width: 47%;
+    float: left;
+}
+.nameInputDiv input:last-child{
+    float: right;
+}

@@ -1,0 +1,42 @@
+.main-container{
+  margin: 50px 0 0 225px;
+    padding: 10px;
+    -ms-overflow-x: hidden;
+        overflow-x: hidden;
+    position: relative;
+}
+
+
+
+@media (min-width: 0){
+    .navbar-toggleable-xs {
+        display: block !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    #toggle-sidebar{
+        display:block;
+    }    
+    .topnav .text-center{
+            padding-left : 55px;
+        }
+    
+    .top-right-nav{
+        display: none;
+    }
+    .navbar-brand{
+        float: none;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .display-sm {
+        display:block;
+    }
+    .hide-sm{
+        display:none;
+    }    
+    .main-container{
+        margin-left : 0;
+    }
+    
+}
