@@ -15,7 +15,7 @@ import { LoginComponent } from './login/index';
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: '/login',
+        redirectTo: '/booking-home',
         pathMatch: 'full'
     },
     {

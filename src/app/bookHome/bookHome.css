@@ -30,6 +30,11 @@
     vertical-align: middle;
 }
 
+.logBtn{
+    background: #53cae0;
+    color: #026850;
+}
+
 @media screen and (max-width:600px){
     .toggleDiv{
         width: 50%;

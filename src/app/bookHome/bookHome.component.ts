@@ -32,8 +32,12 @@ constructor(private router: Router) { }
 		}
 	}
 
+	goLogin(){
+		this.router.navigate(['./login']);
+	}
+
 	 goDashboard(){
-		this.router.navigate(['./dashboard/home']);
+		this.router.navigate(['./dashboard/currentbooking']);
 	}
 }
 

@@ -11,5 +11,7 @@ import { Component } from '@angular/core';
 	styleUrls: ['./signup.css']
 })
 
-export class SignUpComponent { }
+export class SignUpComponent {
+	
+ }
 
