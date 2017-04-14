@@ -64,9 +64,13 @@ public ref:any;
 										})
 									});
 								}).catch((error)=>{
-									//console.log(error);
-									if(error.message =="The email address is badly formatted."){alert("Email not valid... please Enter Valid email"); }
-									else if ( error.message == "The email address is badly formatted."){alert("Email Already Exist. Please Enter another email.."); }
+									console.log(error);
+									if(error.message =="The email address is badly formatted."){
+										alert("Email not valid... please Enter Valid email"); 
+									}
+									else if ( error.message == "The email address is already in use by another account."){
+										alert("Email Already Exist. Please Enter another email.."); 
+									}
 								})
 							}else{ alert("please Accpet all Terms and Conditions.."); }					
 						}
@@ -94,7 +98,7 @@ public ref:any;
 								//console.log(error);
 								if(error.message =="The email address is badly formatted."){
 									alert("Email not valid... please Enter Valid email");
-								}else if ( error.message == "The email address is badly formatted."){
+								}else if ( error.message == "The email address is already in use by another account."){
 									alert("Email Already Exist. Please Enter another email..");
 								}
 							})
