@@ -16,6 +16,20 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { SignUpModule } from './signup/signup.module';
 import { BookingHomeModule } from './bookHome/bookHome.module';
 
+
+//firebase
+import * as firebase from 'firebase';
+  var config = {
+    apiKey: "AIzaSyA2qD4zLXKxEpv0SDc12uhS06jDAG6LfA8",
+    authDomain: "pickmyride-9f86d.firebaseapp.com",
+    databaseURL: "https://pickmyride-9f86d.firebaseio.com",
+    projectId: "pickmyride-9f86d",
+    storageBucket: "pickmyride-9f86d.appspot.com",
+    messagingSenderId: "182620832354"
+  };
+  firebase.initializeApp(config);
+
+
 @NgModule({
   declarations: [
     AppComponent,      
