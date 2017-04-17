@@ -19,7 +19,7 @@ export class AppComponent {
       firebase.auth().onAuthStateChanged((user) => {
             if (user) {
 
-              this.router.navigate(['/dashboard/currentbooking']);
+              this.router.navigate(['/dashboard/home']);
          /*     let ref = firebase.database().ref('webUser');
               ref.once('value',(snapshot:any)=> {
                   if(snapshot.val()){

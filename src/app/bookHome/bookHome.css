@@ -35,6 +35,23 @@
     color: #026850;
 }
 
+.selectContainer form{
+    margin: 0px auto;
+    width: 100%;
+}
+.selectContainer form div:first-child{
+    margin-bottom: 20px;
+}
+.selectContainer form div input{
+    line-height: 24px;
+    height: 40px;
+}
+.selectContainer form  .locationBtn{
+    width: 110px;
+    background: #eee;
+    font-size: 18px;
+}
+
 @media screen and (max-width:600px){
     .toggleDiv{
         width: 50%;

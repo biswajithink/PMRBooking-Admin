@@ -37,7 +37,7 @@ constructor(private router: Router) { }
 	}
 
 	 goDashboard(){
-		this.router.navigate(['./dashboard/currentbooking']);
+		this.router.navigate(['./dashboard/home']);
 	}
 }
 
