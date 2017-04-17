@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as firebase from 'firebase';
 
 @Component({
     moduleId: module.id,
@@ -26,5 +27,8 @@ export class TopNavComponent {
 		var mainContainer: any = ('.main-container');
 		sidebar.toggleClass('sidebar-left-zero');
 		mainContainer.toggleClass('main-container-ml-zero');
+	}
+	doLogout(){
+		firebase.auth().signOut();
 	}
 }

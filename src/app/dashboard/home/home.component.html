@@ -1,9 +1,93 @@
 <div class="container-fluid">
-    <h2 class="text-muted">Dashboard <small>Statistics Overview</small></h2>
+    <h2>Creat Order</h2>
+    <h4>Driver simple order creation process allows you to quickly schedule a driver anytime. Follow the steps below and a driver will be calling you shortly!</h4>
+    <div class="row serviceRow">
+        <div class="col-md-3 employeeDiv">
+            <ul>
+                <li>Employee Name</li>
+                <li>Employee Name</li>
+                <li>Employee Name</li>
+                <li>Employee Name</li>
+                <li>Employee Name</li>
+                <li>Employee Name</li>
+            </ul>
+        </div>
+        <div class="col-md-9 chooseCategory text-center">
+            <div class="col-md-4 column column5">
+                <span class="rateHead">Your Rate</span>
+                <div class="personalDriveRate">
+                    <input type="checkbox" id="test1">
+                    <label for="test1" (click)="toggleHighlight(1)" [ngClass]="{'toggleClass': highlightedDiv === 1 }" class="rateBox">                        
+                        <h2>$18.50</h2>
+                        <span>per hour</span>
+                    </label>      
+                </div>
+                <div class="pickServRate">                    
+                    <input type="checkbox" id="test2">
+                    <label for="test2" (click)="toggleHighlight(2)" [ngClass]="{'toggleClass': highlightedDiv === 2 }" class="rateBox">
+                        <h2>$25.00 Car Pickup</h2>
+                        <span>per hour</span>
+                    </label>
+                </div>  
+            </div>
+            <div class="col-md-8 column column7">
+                <span class="rateHead">2 Services Offered</span>
+                <div class="col-md-7 column">
+                    <div class="personalDriveRate">
+                        <label for="test1" (click)="toggleHighlight(1)" [ngClass]="{'toggleClass': highlightedDiv === 1 }" class="rateBox">                    
+                            <h3>Personal Driver</h3>
+                            <h5>Your Personal Hourly Driver</h5>      
+                        </label>
+                    </div>
+                    <div class="pickServRate">
+                        <label for="test2" (click)="toggleHighlight(2)" [ngClass]="{'toggleClass': highlightedDiv === 2 }" class="rateBox">
+                            <h3>Pickup Service</h3>
+                            <h5>Get You And Your Car Home Safely</h5> 
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-5 column">
+                    <div class="personalDriveRate">
+                        <label for="test1" (click)="toggleHighlight(1)" [ngClass]="{'toggleClass': highlightedDiv === 1 }" class="rateBox columnPink">                    
+                            <h3>$15.95 - $20.45</h3>
+                            <h3>Per Hour</h3>      
+                        </label>
+                    </div>
+                    <div class="pickServRate">
+                        <label for="test2" (click)="toggleHighlight(2)" [ngClass]="{'toggleClass': highlightedDiv === 2 }" class="rateBox columnPink">
+                            <h3>$25 Car Pickup</h3>
+                            <h3>+ Mileage</h3>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
+    <!--<div>
+      <div (click)="toggleHighlight(1)" [ngClass]="{'toggleClass': highlightedDiv === 1 }">
+         <input type="checkbox" id="test1">
+         <label for="test1">
+                <h2>$18.50</h2>
+                <span>per hour</span>
+         </label>         
+      </div>
+      <div (click)="toggleHighlight(2)" [ngClass]="{'toggleClass': highlightedDiv === 2 }">
+         <input type="checkbox" id="test2">
+         <label for="test2">
+            <h2>$25.00 Car Pickup</h2>
+            <span>per hour</span>
+         </label>
+      </div>      
+
+    </div>-->
     
-    <sebm-google-map [latitude]="lat" [longitude]="lng">
+
+
+
+    <!--<sebm-google-map [latitude]="lat" [longitude]="lng">
         <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
-    </sebm-google-map>
+    </sebm-google-map>-->
 </div>
 

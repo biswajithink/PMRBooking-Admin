@@ -45,6 +45,8 @@ export class HomeComponent {
 		for (let i = 0; i < 4; i++) {
 			this.addSlide();
 		}
+		
+
 	}
 
 	/* Carousel */
@@ -57,4 +59,20 @@ export class HomeComponent {
 		});
 	}
 	/* END */
+
+
+ highlightedDiv: number;
+
+  toggleHighlight(newValue: number) {		    
+		if (this.highlightedDiv === newValue) {
+      this.highlightedDiv = 0;
+			console.log(this.highlightedDiv);
+    }
+    else {
+      this.highlightedDiv = newValue;
+			console.log(this.highlightedDiv);
+    }
+  }
+ 
+
 }

@@ -3,8 +3,8 @@
         <a class="navbar-brand" [routerLink]="['/dashboard','/home']">PMRBooking Admin</a>
         
         <ul class="nav navbar-nav top-nav navbar-right pull-xs-right top-right-nav">
-            <li><a href="javascript:;"><i class="fa fa-envelope"></i> Message</a></li>
-            <li><a href="javascript:;"><i class="fa fa-user"></i> John Smith</a></li>            
+            <li><a (click)="doLogout()"><i class="fa fa-sign-out"></i> Logout</a></li>
+            <li><a><i class="fa fa-user"></i> John Smith</a></li>            
         </ul>
     </div>
 </nav>
