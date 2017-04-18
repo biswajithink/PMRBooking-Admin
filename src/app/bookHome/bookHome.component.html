@@ -19,11 +19,13 @@
                     <form>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
-                            <input type="text" class="form-control" placeholder="Pickup Location" id="pickLocation">
+                            <!--<input type="text" class="form-control" placeholder="Pickup Location" id="pickLocation">-->
+                            <input id="pac-input" class="form-control" type="text" placeholder="Pickup Location" (keypress)="showpickup()">
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
-                            <input type="text" class="form-control" placeholder="Destination Location" id="destinationLocation">
+                            <!--<input type="text" class="form-control" placeholder="Destination Location" id="destinationLocation">-->
+                            <input id="pac-drop" class="form-control" type="text" placeholder="Drop Location" (keypress)="showdrop()">
                         </div>
                         <button type="submit" class="btn locationBtn" (click)="goDashboard()">Submit</button>
                     </form>                
@@ -55,3 +57,9 @@
     </div>
 </div>
 </div>
+
+   <!--   <div id="pac-container">
+        <input id="pac-input" type="text"
+            placeholder="Enter a location">
+      </div>
+      -->
