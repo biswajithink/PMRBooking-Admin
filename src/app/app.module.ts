@@ -15,6 +15,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 
 import { SignUpModule } from './signup/signup.module';
 import { BookingHomeModule } from './bookHome/bookHome.module';
+import { pmrBookingHomeModule } from './pmrbookHome/pmrbookHome.module';
 
 
 //firebase
@@ -47,7 +48,8 @@ import * as firebase from 'firebase';
       apiKey: 'AIzaSyBRs8dJH8luo1qJLnK9XdoAFPzB-ZksGN4 '
     }),
     SignUpModule,
-    BookingHomeModule
+    BookingHomeModule,
+    pmrBookingHomeModule
   ],
   providers: [    ],
   bootstrap: [AppComponent]

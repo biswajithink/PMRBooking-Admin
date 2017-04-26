@@ -8,6 +8,8 @@ import { SignUpRoutes } from './signup/index';
 import { SignUpComponent } from './signup/index';
 import { BookHomeRoutes } from './bookHome/index';
 import { BookingHomeComponent } from './bookHome/index';
+import { pmrBookingHomeComponent } from './pmrbookHome/index';
+import { pmrBookHomeRoutes } from './pmrbookHome/index';
 
 
 import { LoginComponent } from './login/index';
@@ -15,7 +17,7 @@ import { LoginComponent } from './login/index';
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: '/booking-home',
+        redirectTo: '/pmrbooking-home',
         pathMatch: 'full'
     },
     {
@@ -27,11 +29,11 @@ export const routes: Routes = [
     	component: SignUpComponent
   	},
     {
-    	path: 'booking-home',
-    	component: BookingHomeComponent
+    	path: 'pmrbooking-home',
+    	component: pmrBookingHomeComponent
   	},
     ...SignUpRoutes,
-    ...BookHomeRoutes,
+    ...pmrBookHomeRoutes,
     ...LoginRoutes,
     ...DashboardRoutes,
     
