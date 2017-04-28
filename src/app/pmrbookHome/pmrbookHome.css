@@ -40,7 +40,7 @@
 .time-separation{width: 100%; overflow: hidden;}
 .time-separation div:first-child{float: left; width: 48%;}
 .time-separation div:nth-child(2){float: right; width: 48%;}
-.ashback{background: #e6e6e6; padding: 1.5% 0; margin: 3% 0; border-bottom: 2px solid #263f71;}
+.ashback{background: #e6e6e6; padding: 1.5% 0; margin: 3% 0 2% 0; border-bottom: 2px solid #263f71;}
 .ashback h1{color: #263f71; margin: 0; text-align: left; font-family: 'watchword_regular_demoregular'; font-size: 3rem; padding-bottom: 1%; font-weight: bold; border-bottom: 1px solid #aeaeae;}
 .ashback p{color: #282828; margin: 0; text-align: left; font-family: 'watchword_regular_demoregular'; font-size: 1.5rem; line-height: 20px; padding-top: 1%; font-family:'Source Sans Pro';}
 .no-padding{padding: 0;}
@@ -49,11 +49,18 @@
 .cartype p{display: block; text-align: center; font-family:'Source Sans Pro'; color: #282828; font-size: 2.5rem; font-weight: bold; padding: 2% 0 8% 0;}
 .cartype p span{color: #263f71;}
 
-.footerdiv{width: 100%; background: #282828;}
+.footerdiv{width: 100%; background: #282828; margin-top: 5%;}
 .footerdiv img{display: block; margin: auto; width: 12%; padding: 2% 0 1% 0;}
 .copy{text-align: center; color: #fff; font-family:'Source Sans Pro'; font-size: 1.5rem; display: block; padding-bottom: 1%;}
-.socialdiv{width: 100%;}
+.socialdiv{width: 10%; margin: 10px auto; }
 .socialdiv ul{padding: 0; margin: 0;}
-.socialdiv ul li{list-style: none; float: left;}
-.socialdiv ul li img{display: block; width: 30%; margin: auto;}
+.socialdiv ul li{list-style: none; display: inline; text-align: center; font-size: 3rem; margin: 2%;}
+.socialdiv ul li a{color: #282828;}
+
+.downloadapp h2{color: #263f71; margin: 0; text-align: center; font-family: 'watchword_regular_demoregular'; font-size: 3rem; padding-bottom: 1%; font-weight: bold;}
+.downloadapp img{display: block; margin: auto;}
+.downloadapp span{display: block; margin: auto; font-family:'Source Sans Pro'; font-size: 5rem; text-align: center; color: #282828; padding-top: 40%; font-weight: bold; padding-bottom: 3%;}
+.storebuttons{width: 100%;}
+.storebuttons a{display: block; float: left; width: 50%;}
+.storebuttons a img{display: block; width: 95%;}
 
